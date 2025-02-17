@@ -45,10 +45,15 @@
     }                               \
   }
 
-#define ll_free(head)                     \
-  {                                       \
-      ll_for_each(head, node){free(node); \
-  }                                       \
+#define ll_free(head)                   \
+  {                                     \
+    typeof(head) _node = head;          \
+    while (_node != NULL)               \
+    {                                   \
+      typeof(head) _next = _node->next; \
+      free(_node);                      \
+      _node = _next;                    \
+    }                                   \
   }
 
 #define ll_contains(head, value) \

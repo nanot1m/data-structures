@@ -1,0 +1,12 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/Users/hazam/Developer/data-structures",
+            "binaryPath": "/Users/hazam/Developer/data-structures/main",
+            "binaryArgs": []
+        }
+    ],
+    "files.associations": {
+        "linked_list.h": "c"
+    }
+}
